@@ -28,7 +28,7 @@ st.title("🗺️ SUMO Ağ Haritası ve Nokta Seçici")
 @st.cache_resource
 def load_sumo_network():
     try:
-        return sumolib.net.readNet("osm.net.xml.gz")
+        return sumolib.net.readNet("sumo_configs_emek/osm.net.xml.gz")
     except Exception as e:
         st.error(f"SUMO ağ dosyası yüklenemedi: {e}")
         return None
