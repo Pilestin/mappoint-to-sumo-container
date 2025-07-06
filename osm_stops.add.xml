@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-06 22:01:56 by Eclipse SUMO netconvert Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="${SUMO_HOME}/data/typemap/osmNetconvert.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj value="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="4559933789" name="Ertaş" lane="460225627#0_0" startPos="337.24" endPos="362.24" friendlyPos="true">
+        <access lane="-214727922_0" pos="0.00" length="41.95" friendlyPos="1"/>
+        <access lane="214727922_0" pos="173.72" length="38.51" friendlyPos="1"/>
+        <access lane="460315553#10_0" pos="12.81" length="17.79" friendlyPos="1"/>
+        <access lane="460315553#9_0" pos="46.23" length="44.40" friendlyPos="1"/>
+        <access lane="460318776#2_0" pos="130.20" length="16.18" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4559933801" name="Ertaş" lane="460313660#12_0" startPos="356.55" endPos="381.55" friendlyPos="true">
+        <access lane="-214727896#1_0" pos="0.00" length="27.08" friendlyPos="1"/>
+        <access lane="214727896#1_0" pos="177.79" length="26.67" friendlyPos="1"/>
+        <access lane="460315553#7_0" pos="36.46" length="22.53" friendlyPos="1"/>
+        <access lane="460315553#8_0" pos="0.00" length="19.72" friendlyPos="1"/>
+        <access lane="460318776#3_0" pos="92.97" length="14.33" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4559947078" name="Emek" lane="460313660#10_0" startPos="1176.41" endPos="1201.41" friendlyPos="true">
+        <access lane="-460320420_0" pos="0.00" length="26.84" friendlyPos="1"/>
+        <access lane="457110996#15_0" pos="25.48" length="27.46" friendlyPos="1"/>
+        <access lane="457110996#16_0" pos="1.56" length="13.44" friendlyPos="1"/>
+        <access lane="460320420_0" pos="123.91" length="24.39" friendlyPos="1"/>
+        <access lane="460320422#5_0" pos="7.64" length="16.02" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4559949716" name="Emek" lane="460225627#2_0" startPos="355.44" endPos="380.44" friendlyPos="true">
+        <access lane="-214727869#1_0" pos="0.00" length="27.59" friendlyPos="1"/>
+        <access lane="214727869#1_0" pos="189.18" length="25.09" friendlyPos="1"/>
+        <access lane="457110996#18_0" pos="36.05" length="28.37" friendlyPos="1"/>
+        <access lane="457110996#19_0" pos="2.27" length="13.42" friendlyPos="1"/>
+        <access lane="460320422#3_0" pos="56.19" length="15.46" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4559961733" name="Tarih Bulvarı" lane="460225627#2_0" startPos="1382.62" endPos="1407.62" friendlyPos="true">
+        <access lane="-213165687_0" pos="0.00" length="58.03" friendlyPos="1"/>
+        <access lane="-213165752#0_0" pos="73.81" length="60.60" friendlyPos="1"/>
+        <access lane="213165687_0" pos="76.40" length="62.57" friendlyPos="1"/>
+        <access lane="457110616#6_0" pos="42.25" length="14.19" friendlyPos="1"/>
+        <access lane="457110996#2_0" pos="31.53" length="15.69" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4559961738" name="Tarih Bulvarı" lane="460313660#10_0" startPos="167.17" endPos="192.17" friendlyPos="true">
+        <access lane="-213165626#4_0" pos="0.00" length="87.65" friendlyPos="1"/>
+        <access lane="-213165876#0_0" pos="79.11" length="87.50" friendlyPos="1"/>
+        <access lane="213165876#0_0" pos="0.00" length="92.16" friendlyPos="1"/>
+        <access lane="457110616#7_0" pos="78.91" length="13.58" friendlyPos="1"/>
+        <access lane="457110996#1_0" pos="50.35" length="16.93" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4559969190" name="71 Evler" lane="460313660#8_0" startPos="657.82" endPos="682.82" friendlyPos="true">
+        <access lane="-213091661#0_0" pos="119.05" length="36.64" friendlyPos="1"/>
+        <access lane="213091661#0_0" pos="0.00" length="34.10" friendlyPos="1"/>
+        <access lane="213165755#3_0" pos="62.29" length="19.52" friendlyPos="1"/>
+        <access lane="457110580#10_0" pos="0.00" length="38.16" friendlyPos="1"/>
+        <access lane="457110580#9_0" pos="31.23" length="12.63" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4559969194" name="71 Evler" lane="460225627#4_0" startPos="576.57" endPos="601.57" friendlyPos="true">
+        <access lane="-213091661#0_0" pos="119.05" length="38.78" friendlyPos="1"/>
+        <access lane="213091661#0_0" pos="0.00" length="36.81" friendlyPos="1"/>
+        <access lane="213165755#3_0" pos="61.19" length="14.23" friendlyPos="1"/>
+        <access lane="457110580#10_0" pos="0.00" length="38.77" friendlyPos="1"/>
+        <access lane="457110580#9_0" pos="32.32" length="17.92" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4559993566" name="Açelya" lane="460225627#6_0" startPos="3.49" endPos="28.49" friendlyPos="true">
+        <access lane="-217169039_0" pos="213.64" length="42.20" friendlyPos="1"/>
+        <access lane="1265047706_0" pos="17.79" length="14.65" friendlyPos="1"/>
+        <access lane="213165643_0" pos="0.00" length="46.22" friendlyPos="1"/>
+        <access lane="213165675_0" pos="10.37" length="50.43" friendlyPos="1"/>
+        <access lane="213165810#1_0" pos="44.91" length="17.75" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7721021165" name="Öykü" lane="460313660#0_0" startPos="0.00" endPos="25.00" friendlyPos="true">
+        <access lane="-1044554852_0" pos="0.00" length="194.14" friendlyPos="1"/>
+        <access lane="-1050596912_0" pos="179.56" length="368.14" friendlyPos="1"/>
+        <access lane="1044554852_0" pos="161.16" length="190.32" friendlyPos="1"/>
+        <access lane="1050596912_0" pos="91.92" length="372.94" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7724485789" lane="1049528725#18_0" startPos="7.75" endPos="22.75" friendlyPos="true"/>
+</additional>

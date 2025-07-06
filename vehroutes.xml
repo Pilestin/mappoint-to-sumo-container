@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-06 22:01:59 by Eclipse SUMO sumo Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm.net.xml.gz"/>
+        <route-files value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\trips.trips.xml"/>
+        <additional-files value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm_stops.add.xml"/>
+    </input>
+
+    <output>
+        <vehroute-output value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\vehroutes.xml"/>
+        <stop-output value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\stopinfos.xml"/>
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-interval value="0"/>
+    </routing>
+
+    <report>
+        <aggregate-warnings value="5"/>
+        <error-log value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\trips.trips.xml.errorlog"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="0_tram_6:0" type="pt_tram" depart="15.00" departLane="0" arrival="525.00">
+        <route edges="460225627#6 1214408556#0 1214408556#2 460313660#2 460313660#3 460313660#4 460313660#6 460313660#7 460313660#8 460313660#9 460313660#10 460313660#12"/>
+        <stop busStop="4559993566" duration="30.00"/>
+        <stop busStop="4559969190" duration="30.00"/>
+        <stop busStop="4559961738" duration="30.00"/>
+        <stop busStop="4559947078" duration="30.00"/>
+        <stop busStop="4559933801" duration="30.00"/>
+    </vehicle>
+
+    <vehicle id="1_tram_T10:0" type="pt_tram" depart="383.00" departLane="0" arrival="830.00">
+        <route edges="460225627#0 460225627#2 460225627#3 460225627#4 460225627#5 460225627#6"/>
+        <stop busStop="4559933789" duration="30.00"/>
+        <stop busStop="4559949716" duration="30.00"/>
+        <stop busStop="4559961733" duration="30.00"/>
+        <stop busStop="4559969194" duration="30.00"/>
+        <stop busStop="4559993566" duration="30.00"/>
+    </vehicle>
+
+</routes>

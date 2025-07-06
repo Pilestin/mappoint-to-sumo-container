@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-06 22:02:00.134486 by osmWebWizard.py v1_20_0+0002-343658e7c64
+<configuration>
+    <net-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm.net.xml.gz"/>
+    <ptlines-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm_ptlines.xml"/>
+    <ptstops-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm_stops.add.xml"/>
+    <output-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm_pt.rou.xml"/>
+    <stopinfos-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\stopinfos.xml"/>
+    <routes-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\vehroutes.xml"/>
+    <trips-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\trips.trips.xml"/>
+    <end value="3599.0"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_minibus" vClass="bus"/>
+    <vType id="pt_share_taxi" vClass="taxi"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_tram_6:0" color="yellow" edges="460225627#6 1214408556#0 1214408556#2 460313660#2 460313660#3 460313660#4 460313660#6 460313660#7 460313660#8 460313660#9 460313660#10 460313660#12" >
+        <stop busStop="4559993566" duration="20" until="35.0"/> <!-- Açelya -->
+        <stop busStop="4559969190" duration="20" until="196.0"/> <!-- 71 Evler -->
+        <stop busStop="4559961738" duration="20" until="290.0"/> <!-- Tarih Bulvarı -->
+        <stop busStop="4559947078" duration="20" until="384.0"/> <!-- Emek -->
+        <stop busStop="4559933801" duration="20" until="479.0"/> <!-- Ertaş -->
+    </route>
+    <route id="pt_tram_T10:0" color="yellow" edges="460225627#0 460225627#2 460225627#3 460225627#4 460225627#5 460225627#6" >
+        <stop busStop="4559933789" duration="20" until="61.0"/> <!-- Ertaş -->
+        <stop busStop="4559949716" duration="20" until="168.0"/> <!-- Emek -->
+        <stop busStop="4559961733" duration="20" until="263.0"/> <!-- Tarih Bulvarı -->
+        <stop busStop="4559969194" duration="20" until="363.0"/> <!-- 71 Evler -->
+        <stop busStop="4559993566" duration="20" until="447.0"/> <!-- Açelya -->
+    </route>
+    <flow id="pt_tram_6:0" type="pt_tram" route="pt_tram_6:0" begin="15.0" end="3614.0" period="600" line="6:0" >
+        <param key="name" value="Osmangazi - 75.Yıl"/>
+        <param key="completeness" value="0.36"/>
+    </flow>
+    <flow id="pt_tram_T10:0" type="pt_tram" route="pt_tram_T10:0" begin="383.0" end="3982.0" period="600" line="T10:0" >
+        <param key="name" value="Şehir Hastanesi - Kumlubel"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+</routes>

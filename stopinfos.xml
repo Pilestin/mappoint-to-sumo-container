@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-06 22:01:59 by Eclipse SUMO sumo Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm.net.xml.gz"/>
+        <route-files value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\trips.trips.xml"/>
+        <additional-files value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm_stops.add.xml"/>
+    </input>
+
+    <output>
+        <vehroute-output value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\vehroutes.xml"/>
+        <stop-output value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\stopinfos.xml"/>
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-interval value="0"/>
+    </routing>
+
+    <report>
+        <aggregate-warnings value="5"/>
+        <error-log value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\trips.trips.xml.errorlog"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<stops xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/stopinfo_file.xsd">
+    <stopinfo id="0_tram_6:0" type="pt_tram" lane="460225627#6_0" pos="28.49" parking="0" started="20.00" ended="50.00" busStop="4559993566" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="0_tram_6:0" type="pt_tram" lane="460313660#8_0" pos="682.82" parking="0" started="181.00" ended="211.00" busStop="4559969190" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="0_tram_6:0" type="pt_tram" lane="460313660#10_0" pos="192.17" parking="0" started="275.00" ended="305.00" busStop="4559961738" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="0_tram_6:0" type="pt_tram" lane="460313660#10_0" pos="1201.41" parking="0" started="369.00" ended="399.00" busStop="4559947078" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="1_tram_T10:0" type="pt_tram" lane="460225627#0_0" pos="362.24" parking="0" started="414.00" ended="444.00" busStop="4559933789" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="0_tram_6:0" type="pt_tram" lane="460313660#12_0" pos="381.55" parking="0" started="464.00" ended="494.00" busStop="4559933801" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="1_tram_T10:0" type="pt_tram" lane="460225627#2_0" pos="380.44" parking="0" started="521.00" ended="551.00" busStop="4559949716" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="1_tram_T10:0" type="pt_tram" lane="460225627#2_0" pos="1407.62" parking="0" started="616.00" ended="646.00" busStop="4559961733" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="1_tram_T10:0" type="pt_tram" lane="460225627#4_0" pos="601.57" parking="0" started="716.00" ended="746.00" busStop="4559969194" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+    <stopinfo id="1_tram_T10:0" type="pt_tram" lane="460225627#6_0" pos="28.49" parking="0" started="800.00" ended="830.00" busStop="4559993566" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0"/>
+</stops>

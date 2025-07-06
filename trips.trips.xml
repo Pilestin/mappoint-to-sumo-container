@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-06 22:01:58.327712 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_20_0+0002-343658e7c64
+<configuration>
+    <net-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm.net.xml.gz"/>
+    <ptlines-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm_ptlines.xml"/>
+    <ptstops-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm_stops.add.xml"/>
+    <output-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\osm_pt.rou.xml"/>
+    <stopinfos-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\stopinfos.xml"/>
+    <routes-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\vehroutes.xml"/>
+    <trips-file value="C:\Users\Yasin\Sumo\2025-07-06-22-01-48\trips.trips.xml"/>
+    <end value="3599.0"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_tram" vClass="tram" speedFactor="1.0"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_minibus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_share_taxi" vClass="taxi" speedFactor="0.95"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <trip id="0_tram_6:0" type="pt_tram" depart="15.0" departLane="best" from="460225627#6" to="460313660#12">
+        <stop busStop="4559993566" duration="30"/>  <!-- Açelya -->
+        <stop busStop="4559969190" duration="30"/>  <!-- 71 Evler -->
+        <stop busStop="4559961738" duration="30"/>  <!-- Tarih Bulvarı -->
+        <stop busStop="4559947078" duration="30"/>  <!-- Emek -->
+        <stop busStop="4559933801" duration="30"/>  <!-- Ertaş -->
+    </trip>
+    <trip id="1_tram_T10:0" type="pt_tram" depart="383.0" departLane="best" from="460225627#0" to="460225627#6">
+        <stop busStop="4559933789" duration="30"/>  <!-- Ertaş -->
+        <stop busStop="4559949716" duration="30"/>  <!-- Emek -->
+        <stop busStop="4559961733" duration="30"/>  <!-- Tarih Bulvarı -->
+        <stop busStop="4559969194" duration="30"/>  <!-- 71 Evler -->
+        <stop busStop="4559993566" duration="30"/>  <!-- Açelya -->
+    </trip>
+</routes>

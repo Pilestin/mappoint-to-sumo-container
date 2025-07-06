@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-07-06 22:01:56 by Eclipse SUMO netconvert Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="${SUMO_HOME}/data/typemap/osmNetconvert.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj value="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</configuration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="6800648" name="Osmangazi - 75.Yıl" line="6" type="tram" vClass="tram" color="yellow" completeness="0.36" missingAfter="9">
+        <busStop id="4559993566" name="Açelya"/>
+        <busStop id="4559969190" name="71 Evler"/>
+        <busStop id="4559961738" name="Tarih Bulvarı"/>
+        <busStop id="4559947078" name="Emek"/>
+        <busStop id="4559933801" name="Ertaş"/>
+    </ptLine>
+    <ptLine id="6800876" name="Şehir Hastanesi - Kumlubel" line="T10" type="tram" vClass="tram" color="yellow" completeness="0.33" missingBefore="10">
+        <busStop id="4559933789" name="Ertaş"/>
+        <busStop id="4559949716" name="Emek"/>
+        <busStop id="4559961733" name="Tarih Bulvarı"/>
+        <busStop id="4559969194" name="71 Evler"/>
+        <busStop id="4559993566" name="Açelya"/>
+    </ptLine>
+</ptLines>
