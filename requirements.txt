@@ -4,3 +4,4 @@ sumolib
 pandas
 numpy
 xmltodict
+streamlit-folium
